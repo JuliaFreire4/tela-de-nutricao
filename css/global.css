@@ -1,0 +1,284 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Yeseva One";
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: rgb(26, 24, 24);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#img_logo{
+    width: 10rem;
+}
+
+.secao{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.secao li {
+    border-bottom: 2px solid transparent;
+    padding: 1rem;
+    transition: border-bottom 0.3s ease;
+
+}
+.secao li:hover{
+    border-bottom: 2px solid rgb(0, 113, 128);
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgContato_link{
+    width:1.4rem;
+}
+
+.imgContato_link:hover{
+    fill: orange;
+}
+
+.bnt_contato{
+    padding: 0.5rem 1rem ;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.bnt_contato:hover{
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+}
+
+/* Slider apresentações */
+.container-slider{
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.container-slider img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container-slider a {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+}
+.container-slider svg {
+    width: 3rem;
+    fill: orange;
+}
+.container-slider svg:hover{
+    fill: black;
+}
+
+.container-slider a:first-of-type{
+    left: 0; /* botão da esquerda */
+}
+.container-slider a:last-of-type {
+    right: 0; /* botão da direita */
+}
+
+/* fim Slider apresentações */
+
+/*  container apresentações serviços */
+.container-servicos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+/* --TITULO + INTRODUÇÃO --- */
+.titulo-e-introducao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo{
+    color: #046268;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.paragrafo {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: 
+    -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Helvetica, Arial,
+     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+/* --FIM TITULO + INTRODUÇÃO --- */
+/* --CONTAINER SLIDER ----------- */
+.sliders-servicos{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+/* ---SLIDER UNIDADE */
+.slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.slider img{
+    border-radius: 5px;
+    width: 100%;
+    height: 280px;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
+}
+.subtitulo-personalizado{
+    color:#046268;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.subtitulo-personalizado:hover{
+    color: orange;
+}
+.paragrafo-servico{
+    padding-top: 0;
+    font-family: 
+    -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Helvetica, Arial,
+     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+    color: rgb(63, 56, 56);
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.bnt-mais-informacoes{
+    background-color: #0a99a3;
+    color: white;
+    padding: 0.7rem;
+    width: fit-content;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+/* ---FIM SLIDER UNIDADE */
+
+/* CONTAINER SLIDER BUTTON */
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.bnt-todos-servicos{
+    padding: 1rem;
+    width: fit-content;
+    border: 1px solid black;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.bnt-todos-servicos:hover{
+    color: white;
+    background-color: #0a99a3;
+    border-color: #0a99a3;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* FIM CONTAINER SLIDER BUTTON */
+
+/* CONTAINER JORNADA */
+
+.container-jornada{
+    display: flex;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --IMAGEM CONTAINER */
+.img-container{
+    overflow: hidden;
+    width: 100rem;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    margin: 0;
+}
+
+.img-container img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    
+}
+/* -- FIM IMAGEM CONTAINER */
+
+/* CONTEUDO CONTAINER JORNADA */
+.conteudo{
+    margin-left: 4rem;
+    margin-right: 6rem;
+    align-items:center;
+    justify-content: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.link-personalizado{
+    text-decoration: none;
+    color: rgb(63, 56, 56);
+}
+
+.link-personalizado:hover{
+    color: #0a99a3;
+}
+
+.container-atendimentos{
+    padding: 4rem;
+    margin: 4rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 4rem;
+    row-gap: 5rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.unidade-atendimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.menor{
+    font-size: 1.5rem;
+}
